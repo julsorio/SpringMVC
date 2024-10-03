@@ -38,53 +38,53 @@
 					<div class="form-body">
 						<div class="form-group">
 							<div>
-								<form role="form" id="nuevoUsuario" autocomplete="off"
-									class="credentials" method="post" action="guardarUsuario">
+								<form:form role="form" id="nuevoUsuario" autocomplete="off"
+									class="credentials" method="post" action="guardarUsuario" modelAttribute="usuario">
 									<label>Nombre</label>
 									<div class="input-group">
-										<input name="nombre" type="text"
-											class="form-control fontAwesome" />
+										<form:input name="nombre" type="text"
+											class="form-control fontAwesome" path="nombre" />
 									</div>
 									<p></p>
 									<label>Apellido</label>
 									<div class="input-group">
-										<input name="apellido" type="text"
-											class="form-control fontAwesome" />
+										<form:input name="apellido" type="text"
+											class="form-control fontAwesome" path="apellido" />
 									</div>
 									<p></p>
 									<label>Usuario</label>
 									<div class="input-group">
-										<input name="usuario" type="text"
-											class="form-control fontAwesome" />
+										<form:input name="usuario" type="text"
+											class="form-control fontAwesome" path="usuario" />
 									</div>
 									<p></p>
 									<label>Password</label>
 									<div class="input-group">
-										<input name="password" type="password"
-											class="form-control fontAwesome" />
+										<form:input name="password" type="password"
+											class="form-control fontAwesome" path="password" />
 									</div>
 									<p></p>
 									<label>Email</label>
 									<div class="input-group">
-										<input name="email" type="text"
-											class="form-control fontAwesome" />
+										<form:input name="email" type="text"
+											class="form-control fontAwesome" path="email" />
 									</div>
 									<p></p>
 									<label>Direcci&oacute;n</label>
 									<div class="input-group">
-										<input name="direccion" type="text"
-											class="form-control fontAwesome" />
+										<form:input name="direccion" type="text"
+											class="form-control fontAwesome" path="direccion"/>
 									</div>
 									<p></p>
 									<label>Tel&eacute;fono</label>
 									<div class="input-group">
-										<input name="telefono" type="text"
-											class="form-control fontAwesome" />
+										<form:input name="telefono" type="text"
+											class="form-control fontAwesome" path="telefono" />
 									</div>
 									<span class="input-group-btn">
 										<button type="submit" class="btn btn-info">Guardar</button>
 									</span>
-								</form>
+								</form:form>
 							</div>
 
 						</div>

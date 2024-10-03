@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 
 <!doctype html>
 <html lang="en">
@@ -35,25 +36,25 @@
 					<div class="form-body">
 						<div class="form-group">
 							<div>
-								<form role="form" id="login-usuarios" autocomplete="off"
-									class="credentials" method="post" action="login">
+								<form:form role="form" id="login-usuarios" autocomplete="off"
+									class="credentials" method="post" action="login" modelAttribute="usuario">
 									Acceso de usuarios
 									<div class="input-group">
-										<input name="usuario" type="text"
+										<form:input name="usuario" type="text"
 											class="form-control fontAwesome"
-											placeholder="&#xf007; Usuario">
+											placeholder="Usuario" path="usuario" />
 									</div>
 									<p></p>
 									<div class="input-group">
-										<input name="password" type="password"
+										<form:input name="password" type="password"
 											class="form-control fontAwesome"
-											placeholder="&#xf007; Password"> <span
-											class="input-group-btn">
-											<button type="submit" class="btn btn-info">Login...</button>
-										</span>
+											placeholder="Password" path="password" /> 
+											<span class="input-group-btn">
+												<button type="submit" class="btn btn-info">Login...</button>
+											</span>
 									</div>
 									<a href="${pageContext.request.servletContext.contextPath}/nuevoUsuario">Nuevo usuario...</a>
-								</form>
+								</form:form>
 							</div>
 
 						</div>
